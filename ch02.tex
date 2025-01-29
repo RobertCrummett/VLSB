@@ -2,7 +2,7 @@
 \vskip 2cm
 \centerline{CHAPTER II}
 \vskip 2cm
-\centerline{\bf RADIOACTIVITY AND NAURAL}
+\centerline{\bf RADIOACTIVITY AND NATURAL}
 \centerline{\bf RADIOACTIVE ELEMENTS}
 \vskip 2cm
 {\sc For understanding the} theoretical and technical basis of radiometric methods, it is necessary to have a basic knowledge of radioactivity, the process and nature of radioactive disintegration etc.
@@ -132,6 +132,60 @@ $$\tau = {T \over \ln 2} = {T \over 0.693} = 1.443 T \eqno 2.5$$
 \bigskip
 \noindent
 {\sc 2.4. Successive Disintegration and Radioactive Equilibrium:}
+\smallskip
+We have mentioned in sec. 2.2, that in a radioactive series, an element disintegrates to form another radioactive element which in turn disintegrates to form another radioactive element and so on.
+The process continues until a stable element is formed.
+Such radioactive decay is called successive disintegration.
+In this type of disintegration, any two adjacent elements are called the parent and the daughter, the former disintegrating to produce the latter.
+In such a decay series, parents and daughters exist in different amounts.
+The quantities of individual radioelements present at any time in the radioactive series  and the conditions governing the equilibrium between them are described by the law of successive disintegration.
+\smallskip
+We shall consider a simple case of formation of one element $B$ and another element $A$.
+The parent element $A$ decays according to the exponential law (eq. 2.1) to form the daughter element $B$.
+The latter in turn decays, according to the same exponential law, to form the daughter element $C$ and so on.
+Evidently, the formation and decay of the daughter depends upon the decay constants of the parent and daughter respectively.
+\smallskip
+Let us suppose that $\lambda_1$ and $\lambda_2$ are the decay constants of $A$ and $B$ respectively.
+Let $N_{01}$ and $N_{02}$ be the numbers of atoms of $A$ and $B$ respectively, at an initial time ($t=0$) and let their numbers be $N_1$ and $N_2$ at time $t$.
+\smallskip
+In the case of the parent, we can express the rate of decay at time $t$ as
+$${dN_1 \over dt} = -\lambda_1 N_1 \eqno 2.6$$
+from which we write the number $N_1$ of atoms of $A$ remaining at time $t$ as
+$$N_1 = N_0 e^{-\lambda_1 t} \eqno 2.7$$
+\smallskip
+Since each atom of $A$ produces an atom of $B$, which in turn decays to form an atom of $C$ and so on, the net rate of increase of $B$ will be the rate at which $B$ is formed less the rate at which $B$ disintegrates.
+The rate of formation of $B$ is equal to the rate of disintegrations of $A$, or $\lambda_1 N_1$.
+The rate of disintegration of $B$ will be $\lambda_2 N_2$.
+Hence, the net rate of accumulation of $B$ will be
+$${dN_2 \over dt} = \lambda_1 N_1 - \lambda_2 N_2 \eqno 2.8$$
+The solution of this equation is of the form
+$$N_2 = K_1 e^{-\lambda_1 t} + K_2 e^{-\lambda_2 t} \eqno 2.9$$
+In order to determine the constants $K_1$ and $K_2$, we differentiate eq. 2.9 to obtain
+$${dN_2 \over dt} = -\lambda_1 K_1 e^{-\lambda_1 t} - \lambda_2 K_2 e^{-\lambda_2 t} \eqno 2.10$$
+and apply the initial conditions as follows:
+
+\noindent
+(i) at $t=0$, $N_2=N_{02}$ and hence from eq. 2.9
+$$N_{02} = K_1 + K_2$$
+
+\noindent
+(ii) at $t=0$, $dN_2 / dt = \lambda N_{01} - \lambda N_{02}$ (from eq. 2.8).
+\smallskip
+and hence from eq. 2.10,
+$$\lambda_1 N_{01} - \lambda_2 N_{02} = -\lambda_1 K_1 - \lambda_2 K_2 \eqno 2.12$$
+Solving eqs. 2.11 and 2.12, we get
+$$K_1 = {\lambda_1 N_{01} \over \lambda_2 - \lambda_1}$$
+and
+$$K_2 = N_{02} - {\lambda_1 N_{01} \over \lambda_2 - \lambda_1}$$
+Substituting the above values into eq. 2.9 and rearranging the terms,
+$$N_2 = N_{02} e^{-\lambda_2 t} + {\lambda_1 N_{01} \over \lambda_2 - \lambda_1}\bigl( e^{-\lambda_1 t} - e^{-\lambda_2 t}\bigr) \eqno 2.13$$
+\smallskip
+The right hand side of eq. 2.13 consists of two parts, the first denoting the number of atoms remaining unchanged from among the initially available number $N_{02}$ of $B$, and the second denoting the number of atoms of $B$ formed on disintegration of $A$, during time $t$.
+\smallskip
+We shall now consider three special cases of interest in radiometry
+\smallskip
+\noindent
+{\it Case I ($\lambda_1 << \lambda_2$):}
 \smallskip
 
 \vfill 
